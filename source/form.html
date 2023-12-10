@@ -4,13 +4,17 @@
     <meta charset="UTF-8">
     <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
+    <link rel="icon" href="favicon.ico">
+    <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
+    <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180.png">
+    <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
   </head>
   <body class="page__body">
     <header class="main-header">
-      <a class="main-header__logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg xmlns="http://www.w3.org/2000/svg" width="33" height="38" viewBox="0 0 33 38" fill="none">
+      <a class="main-header__logo logo" href="https://htmlacademy.ru/intensive/adaptive">
+        <svg class="logo__image logo__image--icon" xmlns="http://www.w3.org/2000/svg" width="33" height="38" viewBox="0 0 33 38" fill="none">
           <g clip-path="url(#clip0_94552_1151)">
             <path d="M6.0117 20.9349V18.6514C12.6311 17.7242 19.3065 17.2752 25.988 17.3076C25.988 17.9139 25.988 18.5302 25.9286 19.1465C27.8277 18.2867 29.8236 17.6691 31.8709 17.3076C30.5661 13.8643 28.1884 10.9536 25.1037 9.02347C22.0189 7.09332 18.398 6.25055 14.7979 6.62482C11.1978 6.9991 7.81798 8.56967 5.17831 11.095C2.53863 13.6202 0.785353 16.9603 0.188175 20.6014L6.0117 20.9349Z" fill="#FDC305"/>
             <path d="M26.9784 24.4813C25.8295 25.7745 25.6017 25.6937 25.6017 27.967C25.6017 28.8865 25.6017 32.9178 25.6017 37.2422C27.8723 35.7125 29.7362 33.6331 31.0271 31.1895C32.3181 28.746 32.9959 26.0143 33 23.2385C32.9869 22.1869 32.8809 21.1385 32.6831 20.1064C30.6312 21.3486 28.7183 22.8156 26.9784 24.4813Z" fill="#FDC305"/>
@@ -30,9 +34,7 @@
           </defs>
         </svg>
         <span class="visually-hidden">HTML и CSS. Адаптивная вёрстка и автоматизация.</span>
-      </a>
-      <a class="logo" href="https://htmlacademy.ru/intensive/adaptive">
-        <svg xmlns="http://www.w3.org/2000/svg" width="101" height="18" viewBox="0 0 101 18" fill="none">
+        <svg class="logo__image logo__image--text" xmlns="http://www.w3.org/2000/svg" width="101" height="18" viewBox="0 0 101 18" fill="none">
           <g clip-path="url(#clip0_94552_1162)">
             <path d="M1.26449 16.5385C0.36955 15.2762 -0.0747041 13.7627 1.02073e-05 12.2308V5.84615C-0.108365 4.29774 0.308071 2.75746 1.18546 1.46154C2.05478 0.461538 3.39829 0 5.37403 0C7.34978 0 8.61425 0.461538 9.40455 1.30769C10.2626 2.37941 10.6846 3.72136 10.59 5.07692V6.61539H6.71754V4.84615C6.74881 4.32289 6.66808 3.799 6.48045 3.30769C6.38016 3.10938 6.2212 2.9448 6.02403 2.83513C5.82686 2.72547 5.60049 2.67572 5.37403 2.69231C4.82082 2.69231 4.42568 2.84615 4.26762 3.23077C4.08883 3.77733 4.00862 4.34988 4.03053 4.92308V13.1538C3.98879 13.71 4.0978 14.267 4.34665 14.7692C4.5047 15.1538 4.89985 15.3077 5.45306 15.3077C6.00627 15.3077 6.32239 15.1538 6.48045 14.7692C6.66013 14.2494 6.74049 13.7019 6.71754 13.1538V11.3077H10.59V12.8462C10.6704 14.2238 10.2508 15.5852 9.40455 16.6923C8.61425 17.6154 7.27075 18.0769 5.37403 18.0769C3.47732 18 2.05478 17.5385 1.26449 16.5385Z" fill="#111111"/>
             <path d="M15.2527 0.231068H19.7574L23.0767 17.7695H19.4413L18.8091 14.0772H16.2011L15.5689 17.7695H11.8545L15.2527 0.231068ZM18.493 11.7695L17.5446 4.92338L16.5963 11.7695H18.493Z" fill="#111111"/>
@@ -53,7 +55,7 @@
         <span class="visually-hidden">HTML и CSS. Адаптивная вёрстка и автоматизация.</span>
       </a>
       <nav class="main-nav">
-        <button class="main-nav__toggle" type="button">
+        <button class="main-nav__toggle button-burger" type="button">
           <span class="visually-hidden">Открыть меню</span>
         </button>
         <div class="main-nav__container">
@@ -65,7 +67,7 @@
               <a class="site-list__link" href="catalog.html">Каталог продукции</a>
             </li>
             <li class="site-list__item site-list__item--current">
-              <a class="site-list__link" href="#">Подбор программы</a>
+              <a class="site-list__link site-list__link--current" href="form.html" aria-current="page">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -188,8 +190,8 @@
     </main>
       <footer class="main-footer">
         <div class="main-footer__container">
-          <div class="main-footer__logo">
-            <a class="logo" href="https://htmlacademy.ru/intensive/adaptive">
+          <div class="main-footer__logo logo">
+            <a class="logo__image logo__image--text" href="https://htmlacademy.ru/intensive/adaptive">
               <svg xmlns="http://www.w3.org/2000/svg" width="128" height="25" viewBox="0 0 128 25" fill="none">
                 <path d="M1.6236 22.4574C0.489608 20.7815 -0.0733133 18.7722 0.0213584 16.7383V8.2617C-0.115966 6.20593 0.411707 4.16097 1.52346 2.44043C2.62499 1.11277 4.32737 0.5 6.83086 0.5C9.33436 0.5 10.9366 1.11277 11.938 2.23617C13.0252 3.65904 13.56 5.4407 13.4401 7.24043V9.28298H8.53324V6.93404C8.57287 6.23932 8.47057 5.54378 8.23282 4.89149C8.10574 4.62819 7.90433 4.40969 7.65449 4.26409C7.40465 4.11849 7.11781 4.05245 6.83086 4.07447C6.12989 4.07447 5.62919 4.27872 5.42891 4.78936C5.20237 5.515 5.10073 6.27516 5.12849 7.03617V17.9638C5.0756 18.7022 5.21373 19.4417 5.52905 20.1085C5.72933 20.6192 6.23003 20.8234 6.931 20.8234C7.63198 20.8234 8.03254 20.6192 8.23282 20.1085C8.4605 19.4183 8.56232 18.6914 8.53324 17.9638V15.5128H13.4401V17.5553C13.5419 19.3844 13.0103 21.1918 11.938 22.6617C10.9366 23.8872 9.23422 24.5 6.83086 24.5C4.42751 24.3979 2.62499 23.7851 1.6236 22.4574Z" fill="#111111"/>
                 <path d="M19.3484 0.806396H25.0563L29.2622 24.0915H24.6558L23.8547 19.1894H20.55L19.7489 24.0915H15.0424L19.3484 0.806396ZM23.4541 16.1255L22.2524 7.03618L21.0507 16.1255H23.4541Z" fill="#111111"/>
@@ -219,9 +221,9 @@
           </div>
           <div class="main-footer__copyright copyright">
             <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="text">HTML Academy</span>
+              <span class="copyright__text">HTML Academy</span>
             </a>
-            <svg xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35" fill="none">
+            <svg class="copyright__image" xmlns="http://www.w3.org/2000/svg" width="27" height="35" viewBox="0 0 27 35" fill="none">
               <g clip-path="url(#clip0_99948_47)">
                 <path d="M13.6426 0.515754L13.5 0.5L0 1.90733V26.5129L13.5 34.5L27 26.5129V1.90733L13.6426 0.515754ZM25.2344 25.5151L13.5 32.4573L1.76561 25.5151V15.4293L13.4507 22.3451L13.4701 23.5984L5.45351 18.8548L5.44295 20.0801L13.4894 24.8885L13.5088 26.175L5.46408 21.4174L5.45351 22.6427L13.5 27.4511L21.6239 22.6182V21.3929V17.409L25.2432 15.2595L25.2344 25.5151ZM25.2344 13.9519L22.0147 15.8319L20.5325 16.7071L13.4666 12.5201L13.456 13.7454L19.4957 17.318L19.4429 17.3495L19.3126 17.4247L18.4536 17.9166L13.4666 14.9689L13.456 16.1942L17.3921 18.5222L16.4591 19.1314L16.438 19.1436L13.4666 17.402L13.456 18.6273L15.4029 19.7615L13.4155 20.9483L1.7973 14.0762L13.4349 7.11831L25.2344 13.9519ZM25.2344 12.7266L13.4401 5.81075L1.76561 12.7196V3.4897L13.5 2.26442L25.2344 3.4897V12.7266Z" fill="#666666"/>
               </g>
