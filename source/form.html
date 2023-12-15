@@ -74,7 +74,7 @@
       </nav>
     </header>
     <main class="main-container">
-      <h1 class="main-title">Подбор программы</h1>
+      <h1 class="main-title title">Подбор программы</h1>
       <section class="information">
         <h2 class="visually-hidden">Анкета</h2>
         <div class="information__container">
@@ -85,17 +85,17 @@
               <ul class="form__list">
                 <li class="form__item">
                   <label class="form__title">Имя:<sup>*</sup>
-                    <input type="text" name="name" placeholder="Барсик" required>
+                    <input class="form__text" type="text" name="name" placeholder="Барсик" required>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__title">Вес (кг):<sup>*</sup>
-                    <input type="number" name="mass" placeholder="7" required>
+                    <input class="form__text" type="number" name="mass" placeholder="7" required>
                   </label>
                 </li>
                 <li class="form__item">
                   <label class="form__title">Возраст (лет):
-                    <input type="number" name="age" placeholder="7">
+                    <input class="form__text" type="number" name="age" placeholder="7">
                   </label>
                 </li>
               </ul>
@@ -126,12 +126,12 @@
                 <ul class="form__list">
                   <li class="form__item">
                     <label class="form__title">E-mail:<sup>*</sup>
-                      <input type="text" name="email" placeholder="kuklachev@gmail.com" required>
+                      <input class="form__text" type="text" name="email" placeholder="kuklachev@gmail.com" required>
                     </label>
                   </li>
                   <li class="form__item">
                     <label class="form__title">Телефон:<sup>*</sup>
-                      <input type="number" name="phone" placeholder="8 (960) 900-60-90" required>
+                      <input class="form__text" type="number" name="phone" placeholder="8 (960) 900-60-90" required>
                     </label>
                   </li>
                 </ul>
@@ -140,7 +140,7 @@
             <div class="comments-container">
               <fieldset class="form__comments">
                 <legend class="form__main-title">Комментарий</legend>
-                <textarea name="comment" id="comment-field" rows="10" cols="30" placeholder="Расскажите обо всех повадках кота"></textarea>
+                <textarea class="form__text" name="comment" id="comment-field" rows="10" cols="30" placeholder="Расскажите обо всех повадках кота"></textarea>
               </fieldset>
             </div>
             <div class="more-container">
