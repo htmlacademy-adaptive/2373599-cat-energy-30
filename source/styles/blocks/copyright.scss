@@ -1,7 +1,20 @@
 .copyright__link {
+  text-decoration: none;
+  color: $background-special-grey2;
+}
+
+.copyright__text {
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
-  text-decoration: none;
-  color: #444444;
+  color: $base-grey-text;
+}
+
+.copyright__link:hover,
+.copyright__link:focus {
+  color: $background-basic-green;
+}
+
+.copyright__link:active {
+  opacity: 0.3;
 }

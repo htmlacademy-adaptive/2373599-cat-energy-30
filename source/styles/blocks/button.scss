@@ -13,6 +13,22 @@
 
 .button--secondary {
   background-color: #f2f2f2;
-  color: #444444;
+  color: $base-grey-text;
   text-decoration: none;
+}
+
+.button:hover {
+  background-color: #5eaa2f;
+}
+
+.button:active {
+  opacity: 0.3;
+}
+
+.button--secondary:hover {
+  background-color: #ebebeb;
+}
+
+.button--secondary:active {
+  opacity: 1;
 }

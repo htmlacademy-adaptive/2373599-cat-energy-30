@@ -1,0 +1,13 @@
+.logo__image {
+  cursor: pointer;
+  color: #111111;
+}
+
+.logo__image:hover,
+.logo__image:focus {
+  color: #3e3e3e;
+}
+
+.logo__image:active {
+  color: #6b6b6b;
+}

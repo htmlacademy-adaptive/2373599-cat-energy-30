@@ -1,4 +1,9 @@
 .promo {
+  width: 280px;
+  height: 290px;
+  background-image: url("../../images/icons/icon-gift.svg");
+  background-size: 78px 80px;
+  background-repeat: no-repeat;
   background-color: $background-basic-green;
   color: $base-secondary-color-text;
 }
