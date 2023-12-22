@@ -1,0 +1,13 @@
+.social__link {
+  cursor: pointer;
+  color: $background-special-grey2;
+}
+
+.social__link:hover,
+.social__link:focus {
+  color: $background-basic-green;
+}
+
+.social__link:active {
+  opacity: 0.3;
+}

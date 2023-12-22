@@ -4,14 +4,14 @@
 
 .example__description {
   font-family: $secondary-font;
-  color: #444444;
+  color: $base-grey-text;
 }
 
 .example__value--primary {
   font-family: $secondary-font;
   font-size: 12px;
   line-height: 12px;
-  color: #444444;
+  color: $base-grey-text;
 }
 
 .example__definition--primary {
