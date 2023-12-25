@@ -1,4 +1,5 @@
 .button {
+  width: 280px;
   padding: 10px 44px;
   background-color: $background-basic-green;
   font-family: $primary-font;
@@ -9,6 +10,15 @@
   color: $base-secondary-color-text;
   text-transform: uppercase;
   border: none;
+  cursor: pointer;
+
+  @media (min-width: $tablet-width) {
+    width: 250px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 169px;
+  }
 }
 
 .button--secondary {

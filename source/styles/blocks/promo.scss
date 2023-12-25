@@ -1,11 +1,22 @@
 .promo {
   width: 280px;
   height: 290px;
+  margin: 0 auto;
   background-image: url("../../images/icons/icon-gift.svg");
   background-size: 78px 80px;
   background-repeat: no-repeat;
   background-color: $background-basic-green;
   color: $base-secondary-color-text;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    height: 200px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 245px;
+    height: 288px;
+  }
 }
 
 .promo__text {
