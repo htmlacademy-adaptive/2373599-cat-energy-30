@@ -2,6 +2,64 @@
   margin: 0;
   padding: 0;
   list-style-type: none;
+
+  @media (min-width: $tablet-width) {
+    width: 632px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    flex-direction: column;
+  }
+}
+
+.form__item {
+  @media (min-width: $tablet-width) {
+    width: 628px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 570px;
+  }
+}
+
+.form__more .form__item {
+  @media (min-width: $tablet-width) {
+    width: 284px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 200px;
+  }
+}
+
+.form__more .form__list {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    flex-direction: row;
+  }
+}
+
+.form__container {
+  @media (min-width: $desktop-width) {
+    display: flex;
+  }
+}
+
+.form__container .form__list {
+  @media (min-width: $desktop-width) {
+    width: 570px;
+    flex-direction: row;
+  }
+}
+
+.form__contacts .form__list {
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    flex-direction: row;
+  }
 }
 
 .form__title {

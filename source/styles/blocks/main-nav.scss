@@ -2,3 +2,24 @@
   background-color: #ffffff;
   color: $base-color-text;
 }
+
+.main-nav__list {
+  margin: 0;
+  padding: 0;
+  list-style-type: 0;
+
+  @media (min-width: $tablet-width) {
+    width: 436px;
+    display: flex;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 475px;
+  }
+}
+
+.main-nav__toggle {
+  @media (min-width: $tablet-width) {
+    display: none;
+  }
+}

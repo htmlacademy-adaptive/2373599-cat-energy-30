@@ -1,0 +1,18 @@
+.location__contacts {
+  width: 280px;
+  margin: 0 auto;
+  padding-top: 26px;
+  padding-bottom: 26px;
+  display: flex;
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    justify-content: space-between;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 565px;
+  }
+}

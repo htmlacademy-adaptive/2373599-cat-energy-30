@@ -11,3 +11,15 @@
 .logo__image:active {
   color: #6b6b6b;
 }
+
+.logo__image--icon {
+  margin-right: 56px;
+
+  @media (min-width: $tablet-width) {
+    margin-right: 13px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 14px;
+  }
+}

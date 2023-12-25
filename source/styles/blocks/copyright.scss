@@ -18,3 +18,14 @@
 .copyright__link:active {
   opacity: 0.3;
 }
+
+.copyright {
+  width: 280px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
+}

@@ -2,7 +2,6 @@
 <html class="page" lang="ru">
   <head>
     <meta charset="UTF-8">
-    <title>Cat Energy</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <link rel="icon" href="favicon.ico">
     <link rel="icon" href="./favicons/favicon.svg" type="image/svg+xml">
@@ -10,6 +9,7 @@
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
     <script src="scripts/index.js" defer></script>
+    <title>Cat Energy</title>
   </head>
   <body class="page__body">
     <header class="main-header">
@@ -17,7 +17,7 @@
         <picture>
           <source media="(min-width: 1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml">
           <source media="(min-width: 768px)" srcset="images/logo-tablet.svg" type="image/svg+xml">
-          <img src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
+          <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
         </picture>
         <span class="visually-hidden">HTML и CSS. Адаптивная вёрстка и автоматизация.</span>
         <svg class="logo__image logo__image--text" width="101" height="18">
@@ -305,6 +305,8 @@
         <div class="main-footer__copyright copyright">
           <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <span class="copyright__text">HTML Academy</span>
+          </a>
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
             <svg width="27" height="35">
               <use href="images/icons/stack.svg#logo-html"></use>
             </svg>
