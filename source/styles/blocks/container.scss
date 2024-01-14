@@ -1,0 +1,14 @@
+.container {
+  max-width: 1330px;
+}
+
+.container__logo {
+  padding: 13px 55px 13px 20px;
+  position: relative;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    display: flex;
+    align-self: flex-start;
+  }
+}

@@ -1,24 +1,50 @@
+.information__container {
+  max-width: 1220px;
+  margin: 0 auto;
+  padding: 0 20px;
+
+  @media (min-width: $tablet-width) {
+    padding: 0 70px;
+  }
+}
+
 .information__text {
+  margin: 0;
+  margin-bottom: 39px;
   text-transform: uppercase;
+
+  @media (min-width: $tablet-width) {
+    margin-bottom: 66px;
+    font-size: 20px;
+    line-height: 30px;
+  }
 }
 
 .information__legend {
+  padding-bottom: 32px;
+  display: block;
+  text-align: center;
   font-family: $secondary-font;
   font-size: 14px;
   line-height: 16px;
+
+  @media (min-width: $tablet-width) {
+    font-size: 16px;
+    padding: 0;
+    text-align: left;
+  }
 }
 
-.information {
-  width: 280px;
-  margin: 0 auto;
+.information__filter {
   display: flex;
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
-    width: 628px;
+    display: block;
+    margin-bottom: 60px;
   }
 
   @media (min-width: $desktop-width) {
-    width: 1220px;
+    margin-bottom: 79px;
   }
 }

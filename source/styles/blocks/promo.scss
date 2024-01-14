@@ -1,26 +1,85 @@
 .promo {
+  position: relative;
+  margin: 0 auto;
+  margin-bottom: 35px;
   width: 280px;
   height: 290px;
-  margin: 0 auto;
-  background-image: url("../../images/icons/icon-gift.svg");
-  background-size: 78px 80px;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  background:
+    linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 100%, #ffffff 10%),
+    image-set(
+    url("../../images/background-catalog-mobile@1x.png") 1x,
+    url("../../images/background-catalog-mobile@2x.png") 2x);
   background-repeat: no-repeat;
-  background-color: $background-basic-green;
-  color: $base-secondary-color-text;
+  background-size: 280px 290px;
 
   @media (min-width: $tablet-width) {
+    margin-bottom: 75px;
     width: 708px;
     height: 200px;
+    align-items: center;
+    justify-content: end;
+    background:
+      linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 100%, #ffffff 10%),
+      image-set(
+      url("../../images/background-catalog-tablet@1x.png") 1x,
+      url("../../images/background-catalog-tablet@2x.png") 2x);
+    background-repeat: no-repeat;
+    background-size: 708px 200px;
   }
 
   @media (min-width: $desktop-width) {
+    margin: 0;
     width: 245px;
     height: 288px;
+    background:
+      linear-gradient(to bottom, rgba(104, 183, 56, 0.85) 100%, #ffffff 10%),
+      image-set(
+      url("../../images/background-catalog-desktop@1x.png") 1x,
+      url("../../images/background-catalog-desktop@2x.png") 2x);
+    background-repeat: no-repeat;
+    background-size: 245px 288px;
+    align-items: flex-end;
   }
 }
 
 .promo__text {
+  width: 161px;
+  margin: 0;
+  padding-bottom: 43px;
   font-family: $secondary-font;
   font-size: 16px;
   line-height: 20px;
+  color: $base-secondary-color-text;
+  text-align: center;
+
+  @media (min-width: $tablet-width) {
+    padding: 0;
+    padding-right: 125px;
+    text-align: left;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding: 0 42px 43px;
+    text-align: center;
+  }
+}
+
+.promo__text::before {
+  content: "";
+  position: absolute;
+  top: 48px;
+  left: 101px;
+  width: 78px;
+  height: 80px;
+  background-image: url("../../images/icons/icon-gift.svg");
+  background-repeat: no-repeat;
+  color: $base-secondary-color-text;
+
+  @media (min-width: $tablet-width) {
+    top: 57px;
+    left: 77px;
+  }
 }

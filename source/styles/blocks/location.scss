@@ -1,18 +1,29 @@
 .location__contacts {
-  width: 280px;
-  margin: 0 auto;
-  padding-top: 26px;
-  padding-bottom: 26px;
-  display: flex;
+  padding: 26px 20px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    width: 628px;
-    padding-top: 60px;
-    padding-bottom: 60px;
+    padding: 60px 70px;
+    display: flex;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     width: 565px;
+    box-sizing: border-box;
+    position: absolute;
+    z-index: 2;
+    background-color: #ffffff;
+    left: 110px;
+    bottom: 230px;
+  }
+}
+
+.location__contacts--secondary {
+  background-color: #f2f2f2;
+
+  @media (min-width: $desktop-width) {
+    background-color: #ffffff;
   }
 }
