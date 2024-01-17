@@ -8,6 +8,10 @@
   font-size: 16px;
   line-height: 20px;
   color: $base-grey-text;
+
+  @media (min-width: $tablet-width) {
+    margin-left: 6px;
+  }
 }
 
 .copyright__link:hover,

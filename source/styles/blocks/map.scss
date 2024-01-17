@@ -4,8 +4,9 @@
     image-set(
     url("../../images/map-mobile@1x.png") 1x,
     url("../../images/map-mobile@2x.png") 2x);
+  background-size: contain;
   background-repeat: no-repeat;
-  width: 320px;
+  width: 100%;
   height: 362px;
 
   @media (min-width: $tablet-width) {
@@ -13,7 +14,6 @@
       image-set(
       url("../../images/map-tablet@1x.png") 1x,
       url("../../images/map-tablet@2x.png") 2x);
-    width: 100%;
     height: 400px;
     background-size: contain;
     background-repeat: no-repeat;
@@ -57,6 +57,7 @@
 
 .map iframe {
   border: none;
+  width: 100%;
 
   @media (min-width: $tablet-width) {
     width: 100%;

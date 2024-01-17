@@ -1,6 +1,6 @@
 .form__container {
   @media (min-width: $tablet-width) {
-    margin-bottom: 65px;
+    margin-bottom: 62px;
     display: flex;
     flex-wrap: wrap;
   }
@@ -97,7 +97,7 @@
 }
 
 .form__item:not(:last-child) {
-  margin-bottom: 14px;
+  margin-bottom: 11px;
 
   @media (min-width: $tablet-width) {
     margin-bottom: 20px;
@@ -128,16 +128,14 @@
   }
 }
 
-.form__letter {
+.form__icon {
   position: absolute;
   right: 12px;
   color: #000000;
-}
 
-.form__phone {
-  position: absolute;
-  right: 13px;
-  color: #000000;
+  @media (min-width: $tablet-width) {
+    right: 16px;
+  }
 }
 
 .form__mark {
@@ -145,7 +143,7 @@
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  border: 1px solid #cdcdcd;
+  outline: 1px solid #cdcdcd;
   box-sizing: border-box;
   background-color: #ffffff;
   order: -1;
@@ -181,17 +179,19 @@
   padding-bottom: 34px;
 
   @media (min-width: $tablet-width) {
+    padding-bottom: 20px;
     display: grid;
     grid-template-columns: 1fr 1fr;
+    column-gap: 58px;
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    flex-direction: row;
     margin-bottom: 60px;
-    padding-right: 205px;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 0;
+    padding-right: 96px;
+    justify-items: start;
+    grid-template-columns: repeat(4, 260px);
+    column-gap: 65px;
   }
 }
 
@@ -225,7 +225,7 @@
 }
 
 .form__text {
-  margin-left: 13px;
+  margin-left: 14px;
   padding: 14px 15px 13px;
   border: 1px solid #e7e7e7;
   box-sizing: border-box;
@@ -259,7 +259,7 @@
 
 .form__main-title {
   width: fit-content;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
   display: block;
   position: relative;
   font-size: 24px;
@@ -272,6 +272,10 @@
     font-size: 36px;
     line-height: 36px;
     box-shadow: -40px 0 0 #ffffff, 40px 0 0 #ffffff;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-bottom: 74px;
   }
 }
 
@@ -345,24 +349,22 @@
 }
 
 .form__text--input:hover {
-  border: 1px solid #cdcdcd;
+  outline: 1px solid #cdcdcd;
 }
 
 .form__text--input:focus {
-  border: 2px solid #444444;
+  outline: 2px solid #444444;
 }
 
 .form__text--input:user-invalid {
-  border: 2px solid #ff8282;
+  outline: 2px solid #ff8282;
 }
 
-.form__text--input:focus + .form__letter,
-.form__text--input:focus + .form__phone {
+.form__text--input:focus + .form__icon {
   color: #68b738;
 }
 
-.form__text--input:user-invalid + .form__letter,
-.form__text--input:user-invalid + .form__phone {
+.form__text--input:user-invalid + .form__icon {
   color: #ff8282;
 }
 

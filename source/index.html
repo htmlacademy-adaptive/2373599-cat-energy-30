@@ -8,7 +8,6 @@
     <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
-    <script src="scripts/index.js" defer></script>
     <title>Cat Energy</title>
   </head>
   <body class="page__body">
@@ -49,7 +48,8 @@
     <main class="main-container">
       <h1 class="visually-hidden">Cat energy функциональное питание для котов</h1>
       <section class="hero">
-        <h2 class="hero__title title">Функциональное питание для котов</h2>
+        <div class="hero__container container">
+          <h2 class="hero__title title">Функциональное питание для котов</h2>
         <p class="hero__slogan">Занялся собой? Займись котом!</p>
         <picture>
           <source type="image/png" media="(min-width: 1440px)" srcset="images/pot-desktop@1x.png 1x, images/pot-desktop@2x.png 2x">
@@ -57,6 +57,7 @@
           <img class="hero__image" src="images/pot-mobile@1x.png" srcset="images/pot-mobile@2x.png 2x" width="280" height="270" alt="Банка с кормом для котов.">
         </picture>
         <a class="hero__link button" href="form.html">Подобрать программу</a>
+        </div>
       </section>
       <section class="programs">
         <h2 class="visually-hidden">Наши программы</h2>
@@ -75,21 +76,21 @@
         <div class="advantages__container">
           <h2 class="advantages__title title">Как это работает</h2>
           <ol class="advantages__list">
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--leaf">
               <div class="advantages__icon advantages__icon--leaf"></div>
               <p class="advantages__description">Функциональное питание содержит только полезные питательные вещества.</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--powder">
               <div class="advantages__icon advantages__icon--powder"></div>
               <p class="advantages__description">Выпускается в виде порошка, который нужно лишь залить кипятком и готово.</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--eat">
               <div class="advantages__icon advantages__icon--eat"></div>
               <p class="advantages__description">Замените один-два приема обычной еды на наше функциональное питание.</p>
             </li>
-            <li class="advantages__item">
+            <li class="advantages__item advantages__item--scales">
               <div class="advantages__icon advantages__icon--scales"></div>
-              <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего питомца!</p>
+              <p class="advantages__description">Уже через месяц наслаждайтесь изменениями к лучшему вашего&nbsp;питомца!</p>
             </li>
           </ol>
         </div>
@@ -122,30 +123,32 @@
             </div>
           </div>
           </div>
-          <div class="example__slider">
-            <div class="example__slider-picture example__slider-picture--primary">
-              <picture>
-                <source type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet-desktop@1x.png 1x, images/cat-fat-tablet-desktop@2x.png 2x">
-                <img class="example__image" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Фото кота Бориса 'до'.">
-              </picture>
+          <div class="example__slider slider">
+            <div class="slider__container">
+              <div class="slider__picture slider__picture--primary">
+                <picture>
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet-desktop@1x.png 1x, images/cat-fat-tablet-desktop@2x.png 2x">
+                  <img class="slider__image" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Фото кота Бориса 'до'.">
+                </picture>
+              </div>
+              <div class="slider__picture slider__picture--secondary">
+                <picture>
+                  <source type="image/png" media="(min-width: 768px)" srcset="images/cat-skinny-tablet-desktop@1x.png 1x, images/cat-skinny-tablet-desktop@2x.png 2x">
+                  <img class="slider__image" src="images/cat-skinny-mobile@1x.png" srcset="images/cat-skinny-mobile@2x.png 2x" width="280" height="256" alt="Фото кота Бориса 'после'.">
+                </picture>
+              </div>
             </div>
-            <div class="example__slider-picture example__slider-picture--secondary">
-              <picture>
-                <source type="image/png" media="(min-width: 768px)" srcset="images/cat-skinny-tablet-desktop@1x.png 1x, images/cat-skinny-tablet-desktop@2x.png 2x">
-                <img class="example__image" src="images/cat-skinny-mobile@1x.png" srcset="images/cat-skinny-mobile@2x.png 2x" width="280" height="256" alt="Фото кота Бориса 'после'.">
-              </picture>
-            </div>
+            <button class="slider__button" type="button">
+              <span class="visually-hidden">Слайдер</span>
+            </button>
           </div>
-          <button class="example__button slider" type="button">
-            <span class="visually-hidden">Слайдер</span>
-          </button>
         </div>
       </section>
       <section class="location">
         <h2 class="visually-hidden">Навигация</h2>
         <div class="location__container">
           <div class="location__contacts contacts">
-            <b class="contacts__promo">Приглашаем к сотрудничеству дилеров!</b>
+            <b class="contacts__promo">Приглашаем<br> к сотрудничеству дилеров!</b>
             <div class="contacts__wrapper">
               <address class="contacts__address">ул. Большая Конюшенная, д. 19/8</address>
               <span class="contacts__address">Санкт-Петербург</span>

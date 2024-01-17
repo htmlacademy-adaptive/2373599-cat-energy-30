@@ -40,15 +40,18 @@
 
 .site-list a {
   display: block;
-  padding: 22px 20px 24px;
+  padding: 22px 20px 23px;
   text-align: center;
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
-    padding: 0;
-    padding-top: 14px;
-    padding-bottom: 12px;
+    padding: 14px 2px 12px;
     border: none;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-top: 9px;
+    padding-bottom: 9px;
   }
 }
 
@@ -62,11 +65,15 @@
 
 .site-list__item {
   @media (min-width: $tablet-width) {
-    margin-right: 33px;
+    margin-right: 31px;
 
     &:last-child {
       margin-right: 0;
     }
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 29px;
   }
 }
 
