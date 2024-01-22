@@ -11,14 +11,13 @@
 
   @media (min-width: $desktop-width) {
     width: 565px;
-    padding-left: 78px;
-    padding-right: 78px;
+    padding: 60px 76px 60px 78px;
     box-sizing: border-box;
     position: absolute;
     z-index: 2;
     background-color: #ffffff;
     left: 111px;
-    bottom: 245px;
+    bottom: 274px;
   }
 }
 

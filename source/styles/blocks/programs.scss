@@ -38,6 +38,10 @@
 
 .programs__container--pro {
   @media (min-width: $tablet-width) {
+    padding-top: 79px;
+  }
+
+  @media (min-width: $desktop-width) {
     padding-top: 77px;
   }
 }
@@ -107,7 +111,7 @@
   @media (min-width: $tablet-width) {
     width: 200px;
     height: 200px;
-    top: 16px;
+    top: 14px;
     left: auto;
     right: 0;
   }
@@ -133,7 +137,7 @@
   @media (min-width: $tablet-width) {
     width: 268px;
     height: 112px;
-    top: 60px;
+    top: 58px;
     left: auto;
     right: -34px;
   }
@@ -225,10 +229,10 @@
   position: absolute;
   display: block;
   background-image: url("../../images/icons/icon-arrow.svg");
-  background-position: -8px;
+  background-position: -4px;
   top: 50%;
   transform: translateY(-50%);
-  right: 3px;
+  right: 7px;
   background-repeat: no-repeat;
   width: 32px;
   height: 10px;
@@ -236,14 +240,18 @@
 
   @media (min-width: $tablet-width) {
     top: 15px;
-    right: -6px;
+    right: -3px;
   }
 }
 
 .programs__container--pro .programs__link--icon::after {
   @media (min-width: $tablet-width) {
-    top: 17px;
-    right: -7px;
+    top: 15px;
+    right: -4px;
+  }
+
+  @media (min-width: $desktop-width) {
+    top: 15px;
   }
 }
 

@@ -45,13 +45,31 @@
   border-bottom: 1px solid #e6e6e6;
 
   @media (min-width: $tablet-width) {
-    padding: 14px 2px 12px;
+    padding: 13px 2px 9px;
     border: none;
   }
 
   @media (min-width: $desktop-width) {
     padding-top: 9px;
     padding-bottom: 9px;
+  }
+}
+
+.site-list--catalog a {
+  @media (min-width: $tablet-width) {
+    padding-top: 11px;
+    padding-bottom: 7px;
+  }
+}
+
+.site-list--form a {
+  @media (min-width: $tablet-width) {
+    padding: 11px 1px 7px;
+  }
+
+  @media (min-width: $desktop-width) {
+    padding-left: 2px;
+    padding-right: 2px;
   }
 }
 

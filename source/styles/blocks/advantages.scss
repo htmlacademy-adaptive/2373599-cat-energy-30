@@ -11,29 +11,26 @@
 }
 
 .advantages__container {
+  width: 280px;
+  margin: 0 auto;
   padding-bottom: 49px;
 
   @media (min-width: $tablet-width) {
-    width: 633px;
-    margin: 0 auto;
-    margin-left: 30px;
+    width: 708px;
     padding: 0;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
-    margin: 0 auto;
   }
 }
 
 .advantages__title {
-  padding-left: 20px;
-  padding-right: 20px;
   margin: 0;
-  margin-bottom: 42px;
+  margin-bottom: 43px;
 
   @media (min-width: $tablet-width) {
-    margin-bottom: 45px;
+    margin-bottom: 43px;
     padding: 0;
   }
 
@@ -60,8 +57,9 @@
   }
 
   @media (min-width: $desktop-width) {
-    display: flex;
-    gap: 70px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 73px;
   }
 }
 
@@ -105,13 +103,13 @@
   }
 
   @media (min-width: $desktop-width) {
-    margin-left: 30px;
+    margin-left: 28px;
   }
 }
 
 .advantages__item--eat {
   @media (min-width: $desktop-width) {
-    margin-left: 5px;
+    margin-left: 2px;
   }
 }
 

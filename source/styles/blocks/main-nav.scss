@@ -9,9 +9,12 @@
 }
 
 .main-nav--opened .main-nav__list {
-  position: absolute;
-  left: 0;
-  width: 100%;
+  @media (max-width: $mobile-width-only) {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    z-index: 2;
+  }
 }
 
 .main-nav__list {

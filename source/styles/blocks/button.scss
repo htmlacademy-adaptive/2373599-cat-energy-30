@@ -8,6 +8,8 @@
   line-height: 20px;
   color: $base-secondary-color-text;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   border: none;
   cursor: pointer;
 
@@ -29,13 +31,12 @@
 }
 
 .button:active {
-  opacity: 0.3;
+  background-color: #5eaa2f;
+  color: rgba($color: #ffffff, $alpha: 0.3);
 }
 
-.button--secondary:hover {
-  background-color: #ebebeb;
-}
-
+.button--secondary:hover,
 .button--secondary:active {
-  opacity: 1;
+  background-color: #ebebeb;
+  color: $base-grey-text;
 }

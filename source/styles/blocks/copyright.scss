@@ -1,6 +1,14 @@
 .copyright__link {
+  width: 280px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   text-decoration: none;
   color: $background-special-grey2;
+
+  @media (min-width: $tablet-width) {
+    width: 168px;
+  }
 }
 
 .copyright__text {
@@ -20,16 +28,6 @@
 }
 
 .copyright__link:active {
+  color: $background-basic-green;
   opacity: 0.3;
-}
-
-.copyright {
-  width: 280px;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  @media (min-width: $tablet-width) {
-    width: 168px;
-  }
 }

@@ -6,15 +6,6 @@
   color: #111111;
 }
 
-.logo__image:hover,
-.logo__image:focus {
-  color: #3e3e3e;
-}
-
-.logo__image:active {
-  color: #6b6b6b;
-}
-
 .logo__image--icon {
   @media (min-width: $tablet-width) {
     width: 60px;
@@ -34,4 +25,13 @@
     width: 128px;
     height: 24px;
   }
+}
+
+.logo__image--text:hover,
+.logo__image--text:focus {
+  opacity: 0.8;
+}
+
+.logo__image--text:active {
+  opacity: 0.6;
 }
