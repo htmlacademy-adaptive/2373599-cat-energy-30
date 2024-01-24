@@ -53,7 +53,7 @@
 }
 
 .main-nav--closed .main-nav__toggle {
-  background-image: url("../../images/icons/burger-menu.svg");
+  background-image: url("../../images/icons/stack.svg#burger-menu");
   background-repeat: no-repeat;
   top: 20px;
   right: 21px;
@@ -66,7 +66,7 @@
 }
 
 .main-nav--opened .main-nav__toggle {
-  background-image: url("../../images/icons/icon-close.svg");
+  background-image: url("../../images/icons/stack.svg#icon-close");
   background-repeat: no-repeat;
   background-size: 20px;
 }

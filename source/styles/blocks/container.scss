@@ -8,8 +8,13 @@
   position: relative;
 
   @media (min-width: $tablet-width) {
+    margin-right: 40px;
     padding: 0;
     display: flex;
     align-self: flex-start;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin-right: 375px;
   }
 }

@@ -48,6 +48,7 @@
   margin: 0;
   margin-bottom: 20px;
   display: grid;
+  align-items: start;
   grid-template-columns: 124px 124px;
   gap: 32px;
 
@@ -78,9 +79,11 @@
 }
 
 .example__item {
+  position: relative;
   display: flex;
   flex-direction: column-reverse;
   align-items: center;
+  text-align: center;
 }
 
 .example__item--price {
@@ -144,7 +147,6 @@
 
 .example__definition {
   margin: 0;
-  position: relative;
   padding-bottom: 8px;
 
   @media (min-width: $tablet-width) {
@@ -165,36 +167,34 @@
 .example__definition--weight::before {
   content: "";
   position: absolute;
-  background-image: url("../../images/icons/weight-back.svg");
+  background-image: url("../../images/icons/stack.svg#weight-back");
   background-repeat: no-repeat;
   width: 124px;
   height: 56px;
   top: -14px;
-  left: -44px;
+  left: 0;
 
   @media (min-width: $tablet-width) {
     width: 162px;
     height: 77px;
     top: -11px;
-    left: -57px;
   }
 }
 
 .example__definition--time::before {
   content: "";
   position: absolute;
-  background-image: url("../../images/icons/weight-back.svg");
+  background-image: url("../../images/icons/stack.svg#weight-back");
   background-repeat: no-repeat;
   width: 124px;
   height: 56px;
   top: -14px;
-  left: -20px;
+  right: 0;
 
   @media (min-width: $tablet-width) {
     width: 162px;
     height: 77px;
     top: -11px;
-    left: -30px;
   }
 }
 
