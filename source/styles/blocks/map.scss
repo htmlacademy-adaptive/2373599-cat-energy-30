@@ -35,7 +35,8 @@
   height: 52px;
   position: absolute;
   top: 139px;
-  left: 135px;
+  left: 50%;
+  transform: translateX(-50%);
   background-image: url("../../images/icons/stack.svg#map-pin");
   background-size: 56px 52px;
   background-repeat: no-repeat;
@@ -44,14 +45,15 @@
     width: 113px;
     height: 106px;
     background-size: 113px 106px;
-    top: 146px;
-    left: 333px;
+    top: 50%;
+    left: 51%;
+    transform: translate(-50%, -50%);
   }
 
   @media (min-width: $desktop-width) {
-    top: 131px;
+    top: 184px;
     left: auto;
-    right: 419px;
+    right: 362px;
   }
 }
 

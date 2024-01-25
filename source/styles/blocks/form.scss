@@ -93,6 +93,14 @@
     padding: 0 20px 22px;
     border-bottom: 1px solid #d9d9d9;
   }
+
+  @media (min-width: $tablet-width) {
+    margin-right: 20px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
+  }
 }
 
 .form__options .form__list {
@@ -236,6 +244,7 @@
   color: $base-grey-text;
   display: flex;
   align-items: center;
+  white-space: nowrap;
 
   @media (min-width: $tablet-width) {
     font-size: 20px;
@@ -279,8 +288,13 @@ input[type="number"]::-webkit-outer-spin-button {
   resize: none;
 
   @media (min-width: $tablet-width) {
+    margin-right: 20px;
     padding: 11px 20px;
     height: 175px;
+  }
+
+  @media (min-width: $desktop-width) {
+    margin: 0;
   }
 }
 
@@ -350,6 +364,7 @@ input[type="number"]::-webkit-outer-spin-button {
   flex-direction: column;
 
   @media (min-width: $tablet-width) {
+    margin-right: 20px;
     width: 628px;
     display: grid;
     align-items: center;

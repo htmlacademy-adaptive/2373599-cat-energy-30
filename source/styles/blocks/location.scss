@@ -4,7 +4,9 @@
   grid-template-columns: 1fr 1fr;
 
   @media (min-width: $tablet-width) {
-    padding: 60px 70px;
+    width: 628px;
+    margin: 0 auto;
+    padding: 60px 0;
     display: flex;
     justify-content: space-between;
   }
@@ -24,7 +26,17 @@
 .location__contacts--secondary {
   background-color: #f2f2f2;
 
+  @media (min-width: $tablet-width) {
+    width: 100%;
+    margin: 0;
+    padding-left: 70px;
+    padding-right: 70px;
+  }
+
   @media (min-width: $desktop-width) {
+    width: 565px;
+    padding-left: 78px;
+    padding-right: 78px;
     background-color: #ffffff;
   }
 }
