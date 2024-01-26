@@ -1,5 +1,6 @@
 /* здесь используйте глобальные селекторы img, body, html и так далее*/
 body {
+  position: relative;
   font-family: $primary-font;
   font-size: 14px;
   font-style: normal;
@@ -9,6 +10,13 @@ body {
 }
 
 img {
-  max-width: 100%;
+  // max-width: 100%;
   height: auto;
+  object-fit: contain;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }

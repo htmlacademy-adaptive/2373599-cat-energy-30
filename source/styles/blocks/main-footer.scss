@@ -10,15 +10,44 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 40px;
+  gap: 19px;
 
   @media (min-width: $tablet-width) {
     width: 708px;
+    padding-top: 58px;
+    padding-bottom: 54px;
     flex-direction: row;
     justify-content: space-between;
   }
 
   @media (min-width: $desktop-width) {
     width: 1220px;
+    padding-top: 68px;
+    padding-bottom: 66px;
+  }
+}
+
+.main-footer__logo {
+  @media (max-width: $mobile-width-only) {
+    text-align: center;
+    padding-bottom: 18px;
+    width: 100%;
+    border-bottom: 1px solid #d9d9d9;
+  }
+}
+
+.main-footer__social {
+  margin: 0;
+  display: flex;
+  gap: 24px;
+
+  @media (max-width: $mobile-width-only) {
+    width: 100%;
+    justify-content: center;
+    border-bottom: 1px solid #d9d9d9;
+  }
+
+  @media (min-width: $tablet-width) {
+    margin-left: 42px;
   }
 }

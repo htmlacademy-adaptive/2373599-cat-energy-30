@@ -1,0 +1,33 @@
+.main-title {
+  width: 280px;
+  margin: 0 auto;
+  margin-bottom: 38px;
+
+  @media (max-width: $mobile-width-only) {
+    padding-top: 28px;
+  }
+
+  @media (min-width: $tablet-width) {
+    width: 628px;
+    margin-bottom: 55px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+    margin: 74px auto 55px;
+    padding: 0;
+  }
+}
+
+.main-title--catalog {
+  margin-bottom: 41px;
+
+  @media (min-width: $tablet-width) {
+    width: 708px;
+    margin-bottom: 74px;
+  }
+
+  @media (min-width: $desktop-width) {
+    width: 1220px;
+  }
+}

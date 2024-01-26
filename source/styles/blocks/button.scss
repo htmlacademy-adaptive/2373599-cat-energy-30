@@ -1,6 +1,5 @@
 .button {
-  width: 280px;
-  padding: 10px 44px;
+  padding: 10px 20px;
   background-color: $background-basic-green;
   font-family: $primary-font;
   font-size: 16px;
@@ -9,15 +8,15 @@
   line-height: 20px;
   color: $base-secondary-color-text;
   text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
   border: none;
   cursor: pointer;
 
   @media (min-width: $tablet-width) {
-    width: 250px;
-  }
-
-  @media (min-width: $desktop-width) {
-    width: 169px;
+    padding: 14px 26px;
+    font-size: 20px;
+    line-height: 26px;
   }
 }
 
@@ -32,13 +31,12 @@
 }
 
 .button:active {
-  opacity: 0.3;
+  background-color: #5eaa2f;
+  color: rgba($color: #ffffff, $alpha: 0.3);
 }
 
-.button--secondary:hover {
-  background-color: #ebebeb;
-}
-
+.button--secondary:hover,
 .button--secondary:active {
-  opacity: 1;
+  background-color: #ebebeb;
+  color: $base-grey-text;
 }

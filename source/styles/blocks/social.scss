@@ -1,3 +1,12 @@
+.social {
+  padding: 0;
+  list-style-type: none;
+
+  @media (max-width: $mobile-width-only) {
+    padding-bottom: 17px;
+  }
+}
+
 .social__link {
   cursor: pointer;
   color: $background-special-grey2;
@@ -9,14 +18,6 @@
 }
 
 .social__link:active {
+  color: $background-basic-green;
   opacity: 0.3;
-}
-
-.social__list {
-  margin: 0;
-  padding: 0;
-  list-style-type: none;
-  width: 132px;
-  display: flex;
-  justify-content: space-between;
 }
