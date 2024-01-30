@@ -8,6 +8,7 @@
     <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <title>Cat Energy</title>
   </head>
   <body class="page__body">
@@ -21,7 +22,7 @@
               <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
             </picture>
             <span class="visually-hidden">HTML и CSS. Адаптивная вёрстка и автоматизация.</span>
-            <svg class="logo__image logo__image--text" width="101" height="18">
+            <svg class="logo__image logo__image--text logo__image--header" width="101" height="18">
               <use href="images/icons/stack.svg#logo-text"></use>
             </svg>
             <span class="visually-hidden">HTML и CSS. Адаптивная вёрстка и автоматизация.</span>
@@ -78,20 +79,17 @@
                 <ul class="form__list">
                   <li class="form__item">
                     <label class="form__title form__title--radio">
-                      <input class="form__input visually-hidden" type="radio" name="product-group" checked>Похудение
-                      <span class="form__mark"></span>
+                      <input class="form__input form__input--radio" type="radio" name="product-group" checked>Похудение
                     </label>
                   </li>
                   <li class="form__item">
                     <label class="form__title form__title--radio">
-                      <input class="form__input visually-hidden" type="radio" name="product-group">Набор массы
-                      <span class="form__mark"></span>
+                      <input class="form__input form__input--radio" type="radio" name="product-group">Набор массы
                     </label>
                   </li>
                   <li class="form__item">
                     <label class="form__title form__title--radio">
-                      <input class="form__input visually-hidden" type="radio" name="product-group">Не знаю (Нужен ваш совет)
-                      <span class="form__mark"></span>
+                      <input class="form__input form__input--radio" type="radio" name="product-group">Не знаю (Нужен ваш совет)
                     </label>
                   </li>
                 </ul>
@@ -130,26 +128,22 @@
                 <ul class="form__list">
                   <li class="form__item">
                     <label class="form__title form__title--checkbox">
-                      <input class="form__input visually-hidden" type="checkbox" name="sweetener" checked>Сахарозаменитель
-                      <span class="form__mark"></span>
+                      <input class="form__input form__input--checkbox" type="checkbox" name="sweetener" checked>Сахарозаменитель
                     </label>
                   </li>
                   <li class="form__item">
                     <label class="form__title form__title--checkbox">
-                      <input class="form__input visually-hidden" type="checkbox" name="water">Питьевая вода
-                      <span class="form__mark"></span>
+                      <input class="form__input form__input--checkbox" type="checkbox" name="water">Питьевая вода
                     </label>
                   </li>
                   <li class="form__item">
                     <label class="form__title form__title--checkbox">
-                      <input class="form__input visually-hidden" type="checkbox" name="milk">Молоко
-                      <span class="form__mark"></span>
+                      <input class="form__input form__input--checkbox" type="checkbox" name="milk">Молоко
                     </label>
                   </li>
                   <li class="form__item">
                     <label class="form__title form__title--checkbox">
-                      <input class="form__input visually-hidden" type="checkbox" name="vitamins">Витамины
-                      <span class="form__mark"></span>
+                      <input class="form__input form__input--checkbox" type="checkbox" name="vitamins">Витамины
                     </label>
                   </li>
                 </ul>

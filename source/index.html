@@ -8,6 +8,7 @@
     <link rel="apple-touch-icon" href="./favicons/apple-icon-180x180.png">
     <link rel="manifest" href="manifest.webmanifest">
     <link rel="stylesheet" href="styles/styles.css">
+    <link rel="preload" href="./fonts/oswald/oswaldregular.woff2" type="font/woff2" as="font" crossorigin="anonymous">
     <title>Cat Energy</title>
   </head>
   <body class="page__body">
@@ -21,7 +22,7 @@
               <img class="logo__image logo__image--icon" src="images/logo-mobile.svg" width="33" height="38" alt="Логотип Cat Energy.">
             </picture>
             <span class="visually-hidden">HTML и CSS. Адаптивная вёрстка и автоматизация.</span>
-            <svg class="logo__image logo__image--text" width="101" height="18">
+            <svg class="logo__image logo__image--text logo__image--header" width="101" height="18">
               <use href="images/icons/stack.svg#logo-text"></use>
             </svg>
             <span class="visually-hidden">HTML и CSS. Адаптивная вёрстка и автоматизация.</span>
@@ -50,13 +51,16 @@
       <section class="hero">
         <div class="hero__container container">
           <h2 class="hero__title title">Функциональное питание для котов</h2>
-        <p class="hero__slogan">Занялся собой? Займись котом!</p>
-        <picture>
-          <source type="image/png" media="(min-width: 1440px)" srcset="images/pot-desktop@1x.png 1x, images/pot-desktop@2x.png 2x">
-          <source type="image/png" media="(min-width: 768px)" srcset="images/pot-tablet@1x.png 1x, images/pot-tablet@2x.png 2x">
-          <img class="hero__image" src="images/pot-mobile@1x.png" srcset="images/pot-mobile@2x.png 2x" width="280" height="270" alt="Банка с кормом для котов.">
-        </picture>
-        <a class="hero__link button" href="form.html">Подобрать программу</a>
+          <p class="hero__slogan">Занялся собой? Займись котом!</p>
+          <picture>
+            <source type="image/webp" media="(min-width: 1440px)" srcset="images/pot-desktop@1x.webp 1x, images/pot-desktop@2x.webp 2x">
+            <source type="image/webp" media="(min-width: 768px)" srcset="images/pot-tablet@1x.webp 1x, images/pot-tablet@2x.webp 2x">
+            <source type="image/webp" srcset="images/pot-mobile@1x.webp 1x, images/pot-mobile@2x.webp 2x">
+            <source type="image/png" media="(min-width: 1440px)" srcset="images/pot-desktop@1x.png 1x, images/pot-desktop@2x.png 2x">
+            <source type="image/png" media="(min-width: 768px)" srcset="images/pot-tablet@1x.png 1x, images/pot-tablet@2x.png 2x">
+            <img class="hero__image" src="images/pot-mobile@1x.png" srcset="images/pot-mobile@2x.png 2x" width="280" height="270" alt="Банка с кормом для котов.">
+          </picture>
+          <a class="hero__link button" href="form.html">Подобрать программу</a>
         </div>
       </section>
       <section class="programs">
@@ -99,40 +103,44 @@
         <div class="example__container">
           <div class="example__wrapper example__wrapper--desktop">
             <h2 class="example__title title">Живой пример</h2>
-          <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-          <div class="example__wrapper example__wrapper--list">
-            <dl class="example__list">
-              <div class="example__item">
-                <dt class="example__value example__value--primary">
-                  снижение веса
-                </dt>
-                <dd class="example__definition example__definition--primary example__definition--weight">5 КГ</dd>
+            <p class="example__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+            <div class="example__wrapper example__wrapper--list">
+              <dl class="example__list">
+                <div class="example__item">
+                  <dt class="example__value example__value--primary">
+                    снижение веса
+                  </dt>
+                  <dd class="example__definition example__definition--primary example__definition--weight">5 КГ</dd>
+                </div>
+                <div class="example__item">
+                  <dt class="example__value example__value--primary">
+                    затрачено времени
+                  </dt>
+                  <dd class="example__definition example__definition--primary example__definition--time">60 ДНЕЙ</dd>
+                </div>
+              </dl>
+              <div class="example__item example__item--price">
+                <p class="example__value example__value--secondary">
+                  Затраты на питание:
+                </p>
+                <p class="example__definition example__definition--secondary">15 000 РУБ.</p>
               </div>
-              <div class="example__item">
-                <dt class="example__value example__value--primary">
-                  затрачено времени
-                </dt>
-                <dd class="example__definition example__definition--primary example__definition--time">60 ДНЕЙ</dd>
-              </div>
-            </dl>
-            <div class="example__item example__item--price">
-              <p class="example__value example__value--secondary">
-                Затраты на питание:
-              </p>
-              <p class="example__definition example__definition--secondary">15 000 РУБ.</p>
             </div>
-          </div>
           </div>
           <div class="example__slider slider">
             <div class="slider__container">
               <div class="slider__picture slider__picture--primary">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-fat-tablet-desktop@1x.webp 1x, images/cat-fat-tablet-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="images/cat-fat-mobile@1x.webp 1x, images/cat-fat-mobile@2x.webp 2x">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/cat-fat-tablet-desktop@1x.png 1x, images/cat-fat-tablet-desktop@2x.png 2x">
                   <img class="slider__image" src="images/cat-fat-mobile@1x.png" srcset="images/cat-fat-mobile@2x.png 2x" width="280" height="256" alt="Фото кота Бориса 'до'.">
                 </picture>
               </div>
               <div class="slider__picture slider__picture--secondary">
                 <picture>
+                  <source type="image/webp" media="(min-width: 768px)" srcset="images/cat-skinny-tablet-desktop@1x.webp 1x, images/cat-skinny-tablet-desktop@2x.webp 2x">
+                  <source type="image/webp" srcset="images/cat-skinny-mobile@1x.webp 1x, images/cat-skinny-mobile@2x.webp 2x">
                   <source type="image/png" media="(min-width: 768px)" srcset="images/cat-skinny-tablet-desktop@1x.png 1x, images/cat-skinny-tablet-desktop@2x.png 2x">
                   <img class="slider__image" src="images/cat-skinny-mobile@1x.png" srcset="images/cat-skinny-mobile@2x.png 2x" width="280" height="256" alt="Фото кота Бориса 'после'.">
                 </picture>
@@ -160,53 +168,53 @@
           </div>
         </div>
       </section>
-      </main>
-      <footer class="main-footer">
-        <div class="main-footer__container">
-          <div class="main-footer__logo logo">
-            <a class="logo__image logo__image--text" href="https://htmlacademy.ru/intensive/adaptive">
-              <svg class="logo__image logo__image--text" width="128" height="25" aria-hidden="true">
-                <use href="images/icons/stack.svg#logo-text"></use>
-              </svg>
-              <span class="visually-hidden">HTML и CSS. Адаптивная вёрстка и автоматизация.</span>
-            </a>
-          </div>
-          <ul class="main-footer__social social">
-            <li class="social__item">
-              <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
-                <span class="visually-hidden">Мы в ВКонтакте</span>
-                <svg width="28" height="22" aria-hidden="true">
-                  <use href="images/icons/stack.svg#vkontakte"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademyru">
-                <span class="visually-hidden">Мы в Youtube</span>
-                <svg width="28" height="22" aria-hidden="true">
-                  <use href="images/icons/stack.svg#youtube"></use>
-                </svg>
-              </a>
-            </li>
-            <li class="social__item">
-              <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
-                <span class="visually-hidden">Мы в Телеграм</span>
-                <svg width="28" height="22" aria-hidden="true">
-                  <use href="images/icons/stack.svg#telegram"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-          <div class="main-footer__copyright copyright">
-            <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
-              <span class="copyright__text">HTML Academy</span>
-              <svg width="27" height="35">
-                <use href="images/icons/stack.svg#logo-html"></use>
-              </svg>
-            </a>
-          </div>
+    </main>
+    <footer class="main-footer">
+      <div class="main-footer__container">
+        <div class="main-footer__logo logo">
+          <a class="logo__image logo__image--text" href="https://htmlacademy.ru/intensive/adaptive">
+            <svg class="logo__image logo__image--text" width="128" height="25" aria-hidden="true">
+              <use href="images/icons/stack.svg#logo-text"></use>
+            </svg>
+            <span class="visually-hidden">HTML и CSS. Адаптивная вёрстка и автоматизация.</span>
+          </a>
         </div>
-      </footer>
-      <script src="scripts/index.js"></script>
+        <ul class="main-footer__social social">
+          <li class="social__item">
+            <a class="social__link social__link--vkontakte" href="https://vk.com/htmlacademy">
+              <span class="visually-hidden">Мы в ВКонтакте</span>
+              <svg width="28" height="22" aria-hidden="true">
+                <use href="images/icons/stack.svg#vkontakte"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--youtube" href="https://www.youtube.com/htmlacademyru">
+              <span class="visually-hidden">Мы в Youtube</span>
+              <svg width="28" height="22" aria-hidden="true">
+                <use href="images/icons/stack.svg#youtube"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="social__item">
+            <a class="social__link social__link--telegram" href="https://t.me/htmlacademy">
+              <span class="visually-hidden">Мы в Телеграм</span>
+              <svg width="28" height="22" aria-hidden="true">
+                <use href="images/icons/stack.svg#telegram"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+        <div class="main-footer__copyright copyright">
+          <a class="copyright__link" href="https://htmlacademy.ru/intensive/adaptive">
+            <span class="copyright__text">HTML Academy</span>
+            <svg width="27" height="35">
+              <use href="images/icons/stack.svg#logo-html"></use>
+            </svg>
+          </a>
+        </div>
+      </div>
+    </footer>
+    <script src="scripts/index.js"></script>
   </body>
 </html>

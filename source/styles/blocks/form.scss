@@ -109,7 +109,6 @@
   @media (min-width: $tablet-width) {
     padding: 21px 26px 27px;
     border: 1px solid #e7e7e7;
-    box-sizing: border-box;
   }
 
   @media (min-width: $desktop-width) {
@@ -163,15 +162,16 @@
   }
 }
 
-.form__mark {
+.form__input {
+  appearance: none;
+  margin: 0;
   margin-right: 15px;
   width: 30px;
   height: 30px;
   border-radius: 50%;
-  outline: 1px solid #cdcdcd;
-  box-sizing: border-box;
+  border: 1px solid #cdcdcd;
   background-color: #ffffff;
-  order: -1;
+  flex-shrink: 0;
 
   @media (min-width: $tablet-width) {
     margin-right: 20px;
@@ -180,11 +180,7 @@
   }
 }
 
-.form__more .form__mark {
-  border-radius: 0;
-}
-
-.form__input[type="radio"]:checked + .form__mark {
+.form__input--radio:checked {
   background-image: url("../../images/icons/stack.svg#radio-button-active");
   background-size: 13px 13px;
   background-repeat: no-repeat;
@@ -195,7 +191,11 @@
   }
 }
 
-.form__input[type="checkbox"]:checked + .form__mark {
+.form__more .form__input {
+  border-radius: 0;
+}
+
+.form__input--checkbox:checked {
   background-image: url("../../images/icons/stack.svg#tick");
 }
 
@@ -218,6 +218,7 @@
     justify-items: start;
     grid-template-columns: repeat(4, 260px);
     column-gap: 65px;
+    row-gap: 32px;
   }
 }
 
@@ -252,11 +253,15 @@
   }
 }
 
+.form__title--radio,
+.form__title--checkbox {
+  white-space: normal;
+}
+
 .form__text {
   margin-left: 13px;
   padding: 14px 15px 13px;
   border: 1px solid #e7e7e7;
-  box-sizing: border-box;
   font-family: $primary-font;
   font-size: 16px;
   font-style: normal;
@@ -273,11 +278,6 @@
     font-size: 20px;
     line-height: 30px;
   }
-}
-
-input[type="number"]::-webkit-inner-spin-button,
-input[type="number"]::-webkit-outer-spin-button {
-  display: none;
 }
 
 .form__comments .form__text {
@@ -388,6 +388,7 @@ input[type="number"]::-webkit-outer-spin-button {
 }
 
 .form__text--input:hover {
+  cursor: pointer;
   outline: 1px solid #cdcdcd;
 }
 
@@ -416,18 +417,29 @@ input[type="number"]::-webkit-outer-spin-button {
   color: #ff8282;
 }
 
-.form__title--radio:hover,
-.form__title--checkbox:hover {
+.form__input:hover {
   cursor: pointer;
+  border: 1px solid #bababa;
 }
 
-.form__title--radio:active,
-.form__title--checkbox:active {
+.form__input:focus {
+  outline: 2px solid #444444;
+}
+
+.form__input:active {
+  opacity: 0.6;
+}
+
+.form__title--radio:has(.form__input--radio:disabled),
+.form__title--checkbox:has(.form__input--checkbox:disabled) {
+  cursor: default;
   opacity: 0.3;
 }
 
-.form__title--radio:disabled + .form__input,
-.form__title--checkbox:disabled + .form__input {
-  cursor: default;
-  opacity: 0.1;
+.form__text:hover {
+  outline: 1px solid #cdcdcd;
+}
+
+.form__text:focus {
+  outline: 2px solid #444444;
 }
