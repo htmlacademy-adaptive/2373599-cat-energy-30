@@ -27,6 +27,13 @@
   }
 }
 
+.logo__image--header {
+  @media (min-width: $desktop-width) {
+    width: 118px;
+    height: 21px;
+  }
+}
+
 .logo__image--text:hover,
 .logo__image--text:focus {
   opacity: 0.8;
