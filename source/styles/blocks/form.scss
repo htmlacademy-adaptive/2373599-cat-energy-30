@@ -298,6 +298,11 @@
   }
 }
 
+.form__text[type="number"]::-webkit-inner-spin-button,
+.form__text[type="number"]::-webkit-outer-spin-button {
+  display: none;
+}
+
 .form__main-title {
   width: fit-content;
   padding: 0;
